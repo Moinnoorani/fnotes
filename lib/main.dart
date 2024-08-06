@@ -14,8 +14,8 @@ import 'package:fnotes/notes_screen/NotesHomeScreen.dart';
 // }
 //
 Future<void> main() async {
-  await WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp(
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
       options: FirebaseOptions(
           apiKey: "AIzaSyCd0NaAwQtQYw0wZbfdJXA90Xh_zx_4hCE",
           appId: "1:792255477390:android:b72d10d3f2e435dc20bbdf",
